@@ -7,3 +7,12 @@ function donation(id){
 
     return donatedNumber;
 }
+
+function showSectionById(id){
+    document.getElementById('donation-section').classList.add('hidden');
+    document.getElementById('history-container').classList.add('hidden');
+
+    // show the section with the provided id as parameter;
+    document.getElementById(id).classList.remove('hidden');
+    
+}

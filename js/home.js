@@ -19,6 +19,14 @@ function noakhali(){
     document.getElementById('my-money').innerText = newBalance;
     alert('You successfully donated '+ noakhaliDonation + " BDT.");
 
+     // add to history section
+     const p = document.createElement('p');
+     
+     p.innerText = `${noakhaliDonation} Taka is Donated for famine-2024 at Feni, Bangladesh`;
+     
+ 
+     document.getElementById('history-container').appendChild(p);
+
      }else{
         alert("You don't have enough money.")
         
@@ -51,6 +59,14 @@ function feni(){
     document.getElementById('my-money').innerText = newBalance;
     alert('You successfully donated '+ feniDonation + " BDT.");
 
+    // add to history section
+    const p = document.createElement('p');
+    
+    p.innerText = `${feniDonation} Taka is Donated for Flood Relief in Feni,Bangladesh`;
+    
+
+    document.getElementById('history-container').appendChild(p);
+
      }else{
         alert("You don't have enough money.")
         
@@ -65,6 +81,7 @@ function feni(){
 
 }
 function quota(){
+    
     
     const quotaDonation = donation('quota-donation');
     if(!isNaN(quotaDonation)){
@@ -82,6 +99,13 @@ function quota(){
     document.getElementById('quota-fund').innerText = totalFund;
     document.getElementById('my-money').innerText = newBalance;
     alert('You successfully donated '+ quotaDonation + " BDT.");
+     // add to history section
+     const p = document.createElement('p');
+    
+     p.innerText = `${quotaDonation} Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh`;
+     
+ 
+     document.getElementById('history-container').appendChild(p);
 
      }else{
         alert("You don't have enough money.")
